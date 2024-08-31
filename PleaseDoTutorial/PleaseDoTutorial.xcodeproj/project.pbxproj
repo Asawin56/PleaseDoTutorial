@@ -94,10 +94,12 @@
 		D3158E122C834A0D009156D3 /* PleaseDoTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				D3158E132C834A0D009156D3 /* PleaseDoTutorialApp.swift */,
-				D3158E152C834A0D009156D3 /* ContentView.swift */,
-				D3158E172C834A0F009156D3 /* Assets.xcassets */,
 				D3158E192C834A0F009156D3 /* Preview Content */,
+				D3158E172C834A0F009156D3 /* Assets.xcassets */,
+				D3158E3F2C834E93009156D3 /* App */,
+				D3158E3D2C834E67009156D3 /* Models */,
+				D3158E3E2C834E82009156D3 /* Views */,
+				D3158E402C834E9C009156D3 /* ViewModels */,
 			);
 			path = PleaseDoTutorial;
 			sourceTree = "<group>";
@@ -125,6 +127,36 @@
 				D3158E302C834A10009156D3 /* PleaseDoTutorialUITestsLaunchTests.swift */,
 			);
 			path = PleaseDoTutorialUITests;
+			sourceTree = "<group>";
+		};
+		D3158E3D2C834E67009156D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3158E3E2C834E82009156D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3158E3F2C834E93009156D3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D3158E132C834A0D009156D3 /* PleaseDoTutorialApp.swift */,
+				D3158E152C834A0D009156D3 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D3158E402C834E9C009156D3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
