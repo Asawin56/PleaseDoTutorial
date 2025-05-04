@@ -13,7 +13,8 @@ struct Item: Identifiable, Equatable, Hashable {
     var title: String
     var description: String
     var startDate: Date = .now
-    
+    var status: Status
+    var priority: Priority
 }
 
 enum Status: String, CaseIterable {
