@@ -40,5 +40,5 @@ struct ListView: View {
 }
 
 #Preview {
-    ListView()
+    ListView(title: "To Do")
 }
