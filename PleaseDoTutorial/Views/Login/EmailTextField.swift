@@ -8,11 +8,34 @@
 import SwiftUI
 
 struct EmailTextField: View {
+    let placeholder: String
+    @Binding var text: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: "person")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 15)
+            
+            TextField(placeholder, text: $text)
+                .submitLabel(.done)
+                .textInputAutocapitalization(.never)
+                .keyboardType(.emailAddress)
+                .background(.clear)
+        }
+        .padding(8)
+        .background(
+            RoundedRectangle(cornerRadius: 8)
+                .stroke(.gray, lineWidth: 0.3)
+                .background(
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(.background)
+                )
+        )
     }
 }
 
 #Preview {
-    EmailTextField()
+    EmailTextField(placeholder: "Email", text: .constant(""))
 }

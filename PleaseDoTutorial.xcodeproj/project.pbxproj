@@ -15,6 +15,11 @@
 		D31A51AF2DC7921600600DA7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A51AE2DC7921600600DA7 /* Item.swift */; };
 		D31A51B32DC7D69D00600DA7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A51B22DC7D69D00600DA7 /* LoginView.swift */; };
 		D31A51B52DC7DC3D00600DA7 /* LoginTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A51B42DC7DC3D00600DA7 /* LoginTitleView.swift */; };
+		D31A51B72DC7DD7A00600DA7 /* LoginFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A51B62DC7DD7A00600DA7 /* LoginFields.swift */; };
+		D31A51B92DC7DEAA00600DA7 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A51B82DC7DEAA00600DA7 /* EmailTextField.swift */; };
+		D31A51BB2DC7E26500600DA7 /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A51BA2DC7E26500600DA7 /* PasswordField.swift */; };
+		D31A51BD2DC7E52200600DA7 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A51BC2DC7E52200600DA7 /* LoginButton.swift */; };
+		D31A51BF2DC7EC5D00600DA7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A51BE2DC7EC4F00600DA7 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,11 @@
 		D31A51AE2DC7921600600DA7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D31A51B22DC7D69D00600DA7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D31A51B42DC7DC3D00600DA7 /* LoginTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTitleView.swift; sourceTree = "<group>"; };
+		D31A51B62DC7DD7A00600DA7 /* LoginFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFields.swift; sourceTree = "<group>"; };
+		D31A51B82DC7DEAA00600DA7 /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		D31A51BA2DC7E26500600DA7 /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
+		D31A51BC2DC7E52200600DA7 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		D31A51BE2DC7EC4F00600DA7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D3ABCE182DC696FE0090E1DD /* PleaseDoTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PleaseDoTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ABCE252DC697010090E1DD /* PleaseDoTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ABCE2F2DC697010090E1DD /* PleaseDoTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +119,7 @@
 		D31A519F2DC71C7200600DA7 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D31A51BE2DC7EC4F00600DA7 /* Extensions.swift */,
 				D31A51992DC71C4C00600DA7 /* PleaseDoTutorialApp.swift */,
 				D31A51982DC71C4C00600DA7 /* ContentView.swift */,
 			);
@@ -145,6 +156,10 @@
 			children = (
 				D31A51B22DC7D69D00600DA7 /* LoginView.swift */,
 				D31A51B42DC7DC3D00600DA7 /* LoginTitleView.swift */,
+				D31A51B62DC7DD7A00600DA7 /* LoginFields.swift */,
+				D31A51B82DC7DEAA00600DA7 /* EmailTextField.swift */,
+				D31A51BA2DC7E26500600DA7 /* PasswordField.swift */,
+				D31A51BC2DC7E52200600DA7 /* LoginButton.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -311,10 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D31A51BD2DC7E52200600DA7 /* LoginButton.swift in Sources */,
 				D31A51B32DC7D69D00600DA7 /* LoginView.swift in Sources */,
 				D31A51AF2DC7921600600DA7 /* Item.swift in Sources */,
+				D31A51BF2DC7EC5D00600DA7 /* Extensions.swift in Sources */,
 				D31A51A52DC7442F00600DA7 /* ListView.swift in Sources */,
+				D31A51BB2DC7E26500600DA7 /* PasswordField.swift in Sources */,
 				D31A51B52DC7DC3D00600DA7 /* LoginTitleView.swift in Sources */,
+				D31A51B72DC7DD7A00600DA7 /* LoginFields.swift in Sources */,
+				D31A51B92DC7DEAA00600DA7 /* EmailTextField.swift in Sources */,
 				D31A51A32DC7219100600DA7 /* HomeView.swift in Sources */,
 				D31A519B2DC71C4C00600DA7 /* ContentView.swift in Sources */,
 				D31A519C2DC71C4C00600DA7 /* PleaseDoTutorialApp.swift in Sources */,
