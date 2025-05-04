@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var path = NavigationPath()
     var body: some View {
         NavigationStack(){
             TabView {
-                Text("Page 1")
+                ListView(title: "Todo")
                 
-                Text("Page 2")
+                ListView(title: "In Progress")
                 
-                Text("Page 3")
+                ListView(title: "Done")
             }
             .tabViewStyle(.page)
             .navigationBarTitleDisplayMode(.inline)
@@ -29,7 +30,7 @@ struct HomeView: View {
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        print("Logout")
+                        print("Navigate to new item")
                     } label: {
                         Image(systemName: "plus")
                     }
