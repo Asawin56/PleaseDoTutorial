@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var text = "Don't have an account?"
+    @State private var prompt = "Sign up here"
+    @State private var isLoggingIn = true
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             Spacer()
@@ -19,9 +23,15 @@ struct LoginView: View {
                 .fontWeight(.semibold)
                 .padding(.horizontal)
             
-            LoginFields(email: .constant(""), pw: .constant(""))
+            if isLoggingIn {
+                LoginFields(email: .constant(""), pw: .constant(""))
+            } else{
+                SignUpFields(fname: .constant(""), lname: .constant(""), email: .constant(""), pw: .constant(""))
+            }
             
             HStack{
+                Spacer()
+                
                 LoginButton(title: "Login") {
                     print("Login button tapped")
                 }
@@ -30,7 +40,7 @@ struct LoginView: View {
             
             Spacer()
             
-            
+            TogglePromptView(text: $text, prompt: $prompt, isLoggingIn: $isLoggingIn)
         }
         .padding()
     }

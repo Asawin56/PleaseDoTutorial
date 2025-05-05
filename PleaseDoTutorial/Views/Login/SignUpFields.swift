@@ -1,0 +1,40 @@
+//
+//  SignUpFields.swift
+//  PleaseDoTutorial
+//
+//  Created by Asawin Krongprasert on 5/5/2568 BE.
+//
+
+import SwiftUI
+
+struct SignUpFields: View {
+    @Binding var fname: String
+    @Binding var lname: String
+    @Binding var email: String
+    @Binding var pw: String
+    
+    var body: some View {
+        VStack(spacing: 12) {
+            KeyboardView(placeholder: "First name", text: $fname)
+                .shadow(color: .gray, radius: 4, x: 1, y: 2.5)
+                
+            
+            KeyboardView(placeholder: "Last name", text: $lname)
+                .shadow(color: .gray, radius: 4, x: 1, y: 2.5)
+                
+            
+            EmailTextField(placeholder: "user@email.com", text: $email)
+                .shadow(color: .gray, radius: 4, x: 1, y: 2.5)
+                
+            
+            PasswordField(placeholder: "password", text: $pw)
+                .shadow(color: .gray, radius: 4, x: 1, y: 2.5)
+                
+        }
+        .padding(.horizontal)
+    }
+}
+
+#Preview (traits: .sizeThatFitsLayout){
+    SignUpFields(fname: .constant(""), lname: .constant(""), email: .constant(""), pw: .constant(""))
+}
