@@ -23,7 +23,7 @@ struct LoginView: View {
             
             if vm.isLoggingIn {
                 LoginFields(email: $vm.email, pw: $vm.pw)
-            } else{
+            } else {
                 SignUpFields(fname: $vm.fname, lname: $vm.lname, email: $vm.newEmail, pw: $vm.newPw)
             }
             
@@ -31,7 +31,12 @@ struct LoginView: View {
                 Spacer()
                 
                 LoginButton(title: vm.titleText)  {
-                    print("Login button tapped")
+                    
+                    if vm.isLoggingIn {
+                        print("Login here")
+                    } else {
+                        vm.signUp()
+                    }
                 }
             }
             .padding(.horizontal)
