@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @StateObject var vm = LoginVM()
+    @EnvironmentObject var vm: LoginVM
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
@@ -31,12 +31,7 @@ struct LoginView: View {
                 Spacer()
                 
                 LoginButton(title: vm.titleText)  {
-                    
-                    if vm.isLoggingIn {
-                        print("Login here")
-                    } else {
-                        vm.signUp()
-                    }
+                    vm.didTapLoginButton()
                 }
             }
             .padding(.horizontal)
